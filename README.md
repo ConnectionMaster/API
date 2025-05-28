@@ -159,11 +159,6 @@ Get the data for a specific issue.
   "estimate": {
     "value": 8
   },
-  "plus_ones": [
-    {
-      "created_at": "2015-12-11T18:43:22.296Z"
-    }
-  ],
   "pipeline": {
     "name": "QA",
     "pipeline_id": "5d0a7a9741fd098f6b7f58a7",
@@ -187,7 +182,6 @@ Get the data for a specific issue.
 
 #### Notes
 
-- `plus_ones[].user_id` was removed from the response.
 - `pipeline` object references the oldest Workspace pipeline this issue is in.
   - **NOTE:** If an issue's status is closed, the `pipeline` value will describe the Pipeline that the issue was in prior to the issue being closed. The ZenHub API does not consider the "Closed" Pipeline to be a distinct Pipeline at this time and you should **not** use the Pipeline value to determine whether or not an issue is closed or open (use `status` instead).
   - **NOTE:** Reopened issues might take up to one minute to show up in the correct Pipeline.
